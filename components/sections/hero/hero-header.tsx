@@ -5,7 +5,7 @@ export function HeroHeader() {
   return (
     <div className="text-center mb-8 md:mb-16">
       <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-gray-900 max-w-4xl mx-auto leading-tight mb-4 md:mb-6">
-        Your All-in-One Assistant for Conversations and Community
+        All-in-One Assistant for Conversations and Community
       </h1>
       <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-6 md:mb-8">
         AI-powered assistant that enhances communication across Telegram, WhatsApp, Slack, and Discord. Your AI evolves with your team.

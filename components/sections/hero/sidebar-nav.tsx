@@ -1,11 +1,13 @@
-import { Home, Clock, CheckSquare, Settings, HelpCircle } from 'lucide-react'
+import { FC } from 'react';
+import { Home, Clock, CheckSquare, Settings, HelpCircle } from 'lucide-react';
+import { TabKey } from '@/components/sections/hero-section';
 
 interface SidebarNavProps {
-  activeTab: string
-  onTabChange: (tab: string) => void
+  activeTab: TabKey;
+  onTabChange: (tab: TabKey) => void;
 }
 
-const navItems = [
+const navItems: { icon: any; label: TabKey }[] = [
   { icon: Home, label: "Home" },
   { icon: Clock, label: "Groups" },
   { icon: CheckSquare, label: "Action Items" },
@@ -13,7 +15,7 @@ const navItems = [
   { icon: HelpCircle, label: "Insights" },
 ]
 
-export function SidebarNav({ activeTab, onTabChange }: SidebarNavProps) {
+const SidebarNav: FC<SidebarNavProps> = ({ activeTab, onTabChange }) => {
   return (
     <nav className="space-y-1">
       {navItems.map(({ icon: Icon, label }) => (
@@ -39,4 +41,6 @@ export function SidebarNav({ activeTab, onTabChange }: SidebarNavProps) {
     </nav>
   )
 }
+
+export default SidebarNav;
 
