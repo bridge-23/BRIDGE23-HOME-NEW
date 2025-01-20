@@ -15,14 +15,13 @@ const plans: PricingPlan[] = [
     },
     buttonText: "Start for free",
     features: [
-      { description: "Meticulous notes, action items, and transcription for unlimited meetings" },
-      { description: "AI-powered search across all your meetings" },
-      { description: "Use the meeting assistant to ask questions about your meetings or do writing tasks" },
+      { description: "Meticulous notes, action items, and summary for unlimited groups" },
+      { description: "AI-powered search across all your groups" },
+      { description: "Use the group assistant to ask questions about your groups or do writing tasks" },
       { description: "Record in-person meetings and import audio/video recordings" },
       { description: "Video and audio playback" },
       { description: "Easily integrate with Slack, Notion, HubSpot, Salesforce, Attio, Linear, monday.com, Zapier, and more" },
       { description: "Generate custom insights with AI" },
-      { description: "Automatically send out emails to meeting invitees with notes and action items" },
     ]
   },
   {
@@ -36,14 +35,12 @@ const plans: PricingPlan[] = [
     isPopular: true,
     features: [
       { description: "Everything in Individual plan" },
-      { description: "Share meetings with your team" },
-      { description: "AI-powered search across all meetings you have access to" },
+      { description: "Share groups with your team" },
+      { description: "AI-powered search across all groups you have access to" },
       { description: "Team-wide automations to generate insights with AI and integrate with other apps" },
-      { description: "Unlimited, free viewers—team members you can share meetings with" },
+      { description: "Unlimited, free viewers—team members you can share groups with" },
       { description: "Custom data retention settings for your team" },
       { description: "Slack huddles support" },
-      { description: "Meeting participant name and image customization" },
-      { description: "Collaborate with comments inline on meeting transcripts to share thoughts on calls" },
     ]
   },
   {

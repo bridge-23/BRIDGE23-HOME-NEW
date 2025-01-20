@@ -1,12 +1,25 @@
+'use client'
+
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { useState } from "react"
 
 export function Footer() {
+  const [email, setEmail] = useState("")
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    // TODO: Implement newsletter signup
+    console.log("Newsletter signup:", email)
+    setEmail("")
+  }
+
   return (
     <footer className="border-t mt-auto">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Left Column */}
           <div className="space-y-4">
             <nav className="space-y-3">
@@ -26,6 +39,25 @@ export function Footer() {
                 Bridge23 for desktop
               </Link>
             </nav>
+          </div>
+
+          {/* Middle Column - Newsletter */}
+          <div className="space-y-4">
+            <h3 className="font-bold text-lg">Stay updated</h3>
+            <p className="text-gray-600">Subscribe to our newsletter for updates and news.</p>
+            <form onSubmit={handleSubmit} className="flex gap-2">
+              <Input
+                type="email"
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="flex-1"
+                required
+              />
+              <Button type="submit" variant="default">
+                Subscribe
+              </Button>
+            </form>
           </div>
 
           {/* Right Column */}

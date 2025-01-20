@@ -8,15 +8,20 @@ A modern, responsive landing page for Bridge23 built with Next.js 14 and shadcn/
 - **Styling:** [Tailwind CSS](https://tailwindcss.com)
 - **UI Components:** [shadcn/ui](https://ui.shadcn.com)
 - **Icons:** [Lucide Icons](https://lucide.dev)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
 
 ## Features
 
 - 🎨 Modern and clean design
-- 📱 Fully responsive
+- 📱 Fully responsive with separate mobile/desktop navigation
 - 🌙 Light/Dark mode support
 - ⚡ Fast page loads with Next.js 14
-- 🧩 Reusable components
-- 🎯 SEO optimized
+- 🧩 Reusable shadcn/ui components
+- 🎯 SEO optimized with meta tags
+- 🔄 Smooth transitions and animations
+- 🛡️ Error boundaries for better error handling
+- 📧 Newsletter subscription feature
+- 🔗 Social media integration
 
 ## Getting Started
 
@@ -35,7 +40,7 @@ cd BRIDGE23-HOME-NEW
 
 2. Install dependencies:
 ```bash
-npm install --legacy-peer-deps
+npm install
 ```
 
 3. Run the development server:
@@ -49,18 +54,54 @@ npm run dev
 
 ```
 ├── app/                  # Next.js app directory
-│   ├── layout.tsx       # Root layout
+│   ├── layout.tsx       # Root layout with error boundary
 │   ├── page.tsx         # Home page
+│   ├── pricing/         # Pricing page
+│   ├── terms/           # Terms page
+│   ├── privacy/         # Privacy page
 │   └── globals.css      # Global styles
 ├── components/          
 │   ├── ui/             # shadcn/ui components
-│   ├── layout/         # Layout components
-│   └── sections/       # Page sections
-├── lib/                 # Utility functions
+│   ├── layout/         # Layout components (Navigation, Footer)
+│   │   └── navigation/ # Desktop and Mobile navigation
+│   ├── sections/       # Page sections
+│   │   ├── hero/       # Hero section components
+│   │   └── features/   # Features section
+│   └── features/       # Feature-specific components
 ├── public/             # Static assets
-├── styles/             # Additional styles
-└── types/              # TypeScript types
+│   ├── social/         # Social media icons
+│   ├── features/       # Feature images
+│   └── integrations/   # Integration logos
+├── types/              # TypeScript types
+└── lib/               # Utility functions
 ```
+
+## Development Rules
+
+1. **Components:**
+   - Use shadcn/ui for UI components
+   - Create separate mobile/desktop versions for complex components
+   - Implement error boundaries for error handling
+
+2. **Styling:**
+   - Use Tailwind CSS for styling
+   - Follow mobile-first approach
+   - Maintain consistent spacing and colors
+
+3. **State Management:**
+   - Use React hooks for local state
+   - Implement proper error handling
+   - Add loading states where necessary
+
+4. **Performance:**
+   - Optimize images using next/image
+   - Implement proper SEO meta tags
+   - Use proper lazy loading
+
+5. **Code Organization:**
+   - Keep components modular and reusable
+   - Follow consistent naming conventions
+   - Maintain proper file structure
 
 ## Available Scripts
 
