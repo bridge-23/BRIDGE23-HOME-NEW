@@ -6,10 +6,10 @@ export function HeroHeader() {
     <div className="py-2 md:py-2 lg:py-10">
       <div className="text-center mb-12 md:mb-16 lg:mb-20">
         <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-gray-900 max-w-4xl mx-auto leading-tight mb-6 md:mb-8 lg:mb-10">
-          All-in-One Assistant for Conversations and Community
+            Superior Team and Community Management
         </h1>
         <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8 md:mb-10 lg:mb-12">
-          AI-powered assistant that enhances communication across Telegram, WhatsApp, Slack, and Discord. Your AI evolves with your team.
+            Automated planning and task execution for teams and communities
         </p>
         <Link href="https://beta.bridge23.app/">
           <Button className="bg-[#FF5C35] text-white hover:bg-[#E54E2B] h-12 px-8 text-lg transition-all duration-200 transform hover:scale-105">
