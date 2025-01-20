@@ -81,8 +81,8 @@ const formatMemberCount = (count: number) => {
 
 export function HomeView() {
   return (
-    <div className="flex-1">
-    <Card className="p-4 md:p-6 bg-white rounded-[32px] shadow-[0_0_20px_0_rgb(236,236,241)]">
+   
+    
       <div className="space-y-4">
         <h2 className="text-xl md:text-2xl font-bold text-[#11141A] tracking-tight">Marketing Group </h2>
         <div className="flex flex-col space-y-4">
@@ -124,8 +124,6 @@ export function HomeView() {
           </div>
         </div>
       </div>
-    </Card>
-  </div>
   )
 }
 

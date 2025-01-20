@@ -67,6 +67,10 @@ const plans: PricingPlan[] = [
 export default function PricingPage() {
   const [billingPeriod, setBillingPeriod] = useState<'monthly' | 'yearly'>('monthly')
 
+  const handlePeriodChange = (value: string) => {
+    setBillingPeriod(value as 'monthly' | 'yearly')
+  }
+
   return (
     <div className="min-h-screen py-16 px-4">
       <div className="max-w-7xl mx-auto text-center">
@@ -77,16 +81,28 @@ export default function PricingPage() {
           Subscribe if you love it.
         </h2>
 
-        <div className="relative inline-flex mb-8 md:mb-16">
-          <Tabs defaultValue="monthly" value={billingPeriod} onValueChange={setBillingPeriod} className="w-[300px]">
-            <TabsList className="grid w-full grid-cols-2">
-              <TabsTrigger value="monthly">Monthly</TabsTrigger>
-              <TabsTrigger value="yearly">Yearly</TabsTrigger>
+        <div className="flex flex-col items-center gap-2 mb-8 md:mb-16">
+          <Tabs defaultValue="monthly" value={billingPeriod} onValueChange={handlePeriodChange} className="w-[300px]">
+            <TabsList className="grid w-full grid-cols-2 bg-gray-200 p-1 rounded-lg">
+              <TabsTrigger 
+                value="monthly" 
+                className="rounded-md data-[state=active]:bg-white data-[state=active]:shadow-sm border border-transparent data-[state=active]:border-gray-200"
+              >
+                Monthly
+              </TabsTrigger>
+              <TabsTrigger 
+                value="yearly"
+                className="rounded-md data-[state=active]:bg-white data-[state=active]:shadow-sm border border-transparent data-[state=active]:border-gray-200"
+              >
+                Yearly
+              </TabsTrigger>
             </TabsList>
           </Tabs>
-          <span className="absolute -right-32 top-2 text-sm italic text-gray-600 hidden md:inline">
-            Get two months free
-          </span>
+          {billingPeriod === 'monthly' && (
+            <span className="text-sm italic text-gray-600">
+              Get two months free in the yearly plan
+            </span>
+          )}
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
