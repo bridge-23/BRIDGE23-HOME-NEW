@@ -8,8 +8,8 @@ import { DesktopNav } from "./navigation/desktop-nav"
 import { MobileNav } from "./navigation/mobile-nav"
 
 const navItems: NavItem[] = [
-  { href: "/releases", label: "Releases" },
   { href: "/pricing", label: "Pricing" },
+  { href: "/releases", label: "Releases" },
   { href: "/affiliates", label: "Affiliates" },
   { href: "https://beta.bridge23.app/", label: "Log in" },
   { href: "https://beta.bridge23.app/", label: "Sign up", isButton: true },
