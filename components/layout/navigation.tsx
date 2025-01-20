@@ -23,7 +23,7 @@ export function Navigation() {
     <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50 border-b">
       <div className="max-w-full mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-2xl font-bold text-[#FF5C35]">Bridge23</Link>
+          <Link href="/" className="text-2xl font-bold text-black">Bridge23</Link>
           <div className="hidden md:flex items-center space-x-8">
             {navItems.slice(0, -2).map((item) => (
               <NavLink key={item.label} {...item} />

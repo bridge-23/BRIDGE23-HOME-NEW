@@ -44,7 +44,7 @@ function AssistantView() {
   return (
     <>
       <div className="bg-white rounded-xl border-2 border-[rgba(182,182,209,0.15)] p-2 md:p-3">
-        <p className="text-xs md:text-sm text-[#333333]">What color did Emma say we should use?</p>
+        <p className="text-xs md:text-sm text-[#333333]">What Elon Musk say we should use?</p>
       </div>
       <div className="bg-[#F4F4F8] rounded-xl p-2 md:p-3">
         <div className="flex items-center gap-2 mb-1 md:mb-2">
@@ -53,7 +53,7 @@ function AssistantView() {
           </svg>
           <p className="text-xs md:text-sm font-medium">Assistant</p>
         </div>
-        <p className="text-xs md:text-sm text-[#333333]">Emma suggested the <span className="font-semibold">blue gradient.</span></p>
+        <p className="text-xs md:text-sm text-[#333333]">Elon Musk suggested the <span className="font-semibold">use mind.</span></p>
       </div>
     </>
   )
@@ -67,7 +67,7 @@ function PeopleView() {
           <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-500 font-semibold text-xs md:text-sm">
             EF
           </div>
-          <p className="text-xs md:text-sm font-medium">Emma Ford</p>
+          <p className="text-xs md:text-sm font-medium"> Donald Trump</p>
         </div>
       </div>
       <div className="bg-white rounded-xl border-2 border-[rgba(182,182,209,0.15)] p-2 md:p-3">
@@ -75,7 +75,7 @@ function PeopleView() {
           <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-green-100 flex items-center justify-center text-green-500 font-semibold text-xs md:text-sm">
             NW
           </div>
-          <p className="text-xs md:text-sm font-medium">Nick White</p>
+            <p className="text-xs md:text-sm font-medium">Elon Musk</p>
         </div>
       </div>
     </>

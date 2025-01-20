@@ -18,13 +18,13 @@ export function HowItWorksSection() {
               1
             </div>
             <div className="mb-6">
-              <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-18%20at%2012.37.42%E2%80%AFPM-Ud2yFS7DW6KnqZ7HdHpS2jFOzsFmy7.png" alt="Calendar Interface" className="w-full h-auto" />
+              <img src="/features/connect-groups-demo.svg" alt="Calendar Interface" className="w-full h-auto" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-2">
-              Connect your calendar
+              Connect your groups
             </h3>
             <p className="text-gray-600">
-              Or just hit record if you're in-person.
+              Connect your groups to get started.
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export function HowItWorksSection() {
               </div>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-2">
-              Focus on your meeting
+              Focus on your conversations
             </h3>
             <p className="text-gray-600">
               Be fully present in your conversations.
@@ -69,7 +69,7 @@ export function HowItWorksSection() {
               <div className="bg-gray-50 rounded-lg p-4">
                 <div className="flex gap-2 mb-2">
                   <span className="px-2 py-1 bg-yellow-100 rounded text-sm">$15,000</span>
-                  <span className="px-2 py-1 bg-blue-100 rounded text-sm">Auto transcription</span>
+                  <span className="px-2 py-1 bg-blue-100 rounded text-sm">Auto summary</span>
                 </div>
                 <div className="text-lg font-semibold mb-2">Brianne <span className="text-gray-400">&lt;&gt;</span> Amir Weekly</div>
                 <div className="w-full h-2 bg-gray-200 rounded"></div>
@@ -79,7 +79,7 @@ export function HowItWorksSection() {
               Review your notes
             </h3>
             <p className="text-gray-600">
-              Ask questions or write a follow-up email with the meeting assistant.
+              Review your notes and get a summary of the conversation.
             </p>
           </div>
         </div>

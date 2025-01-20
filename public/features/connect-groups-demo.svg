@@ -1,0 +1,94 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Elements -->
+  <g transform="translate(40, 40)">
+    <!-- Rotated Background Shape -->
+    <rect width="300" height="200" rx="20" fill="rgba(0, 50, 107, 0.16)" transform="rotate(9)"/>
+    
+    <!-- Connection Lines -->
+    <path d="M0.5 1C0.5 1 17 -3.205 17 15C17 33.205 17 96.5 17 96.5" 
+      stroke="rgb(182, 182, 209)" fill="transparent"/>
+    <path d="M18.25 0.828C18.25 0.828 1.25 -2.46 1.25 11.775C1.25 26.009 1.25 75.5 1.25 75.5" 
+      stroke="rgb(182, 182, 209)" fill="transparent"/>
+  </g>
+
+  <!-- Main Card -->
+  <g transform="translate(200, 100)">
+    <rect width="400" height="400" rx="16" fill="white" filter="drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.05))"/>
+    
+    <!-- Header -->
+    <g transform="translate(24, 24)">
+      <text font-family="Inter" font-size="16" font-weight="600" fill="#11141A">
+        Connect Groups
+      </text>
+    </g>
+
+    <!-- Platform Selection -->
+    <g transform="translate(24, 80)">
+      <!-- WhatsApp -->
+      <g>
+        <circle cx="32" cy="32" r="32" fill="#25D366" opacity="0.1"/>
+        <circle cx="32" cy="32" r="24" fill="#25D366"/>
+        <text x="32" y="38" font-family="Inter" font-size="14" fill="white" text-anchor="middle">W</text>
+      </g>
+      <!-- Connection Arrow -->
+      <path d="M80 32 L120 32" stroke="#807E96" stroke-width="2" stroke-dasharray="4 4"/>
+      <!-- Telegram -->
+      <g transform="translate(120, 0)">
+        <circle cx="32" cy="32" r="32" fill="#4262FF" opacity="0.1"/>
+        <circle cx="32" cy="32" r="24" fill="#4262FF"/>
+        <text x="32" y="38" font-family="Inter" font-size="14" fill="white" text-anchor="middle">T</text>
+      </g>
+    </g>
+
+    <!-- Group List -->
+    <g transform="translate(24, 160)">
+      <!-- Group 1 -->
+      <g>
+        <rect width="352" height="72" rx="12" fill="#F9F9FB"/>
+        <g transform="translate(16, 16)">
+          <circle cx="20" cy="20" r="20" fill="#25D366"/>
+          <text x="56" y="20" font-family="Inter" font-size="14" font-weight="600" fill="#11141A">Marketing Team</text>
+          <text x="56" y="40" font-family="Inter" font-size="12" fill="#807E96">127 members • Connected</text>
+        </g>
+      </g>
+
+      <!-- Group 2 -->
+      <g transform="translate(0, 88)">
+        <rect width="352" height="72" rx="12" fill="#F9F9FB"/>
+        <g transform="translate(16, 16)">
+          <circle cx="20" cy="20" r="20" fill="#4262FF"/>
+          <text x="56" y="20" font-family="Inter" font-size="14" font-weight="600" fill="#11141A">Product Updates</text>
+          <text x="56" y="40" font-family="Inter" font-size="12" fill="#807E96">89 members • Select to connect</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Connect Button -->
+    <g transform="translate(24, 340)">
+      <rect width="352" height="40" rx="20" fill="#4262FF"/>
+      <text x="176" y="26" font-family="Inter" font-size="14" font-weight="600" fill="white" text-anchor="middle">
+        Connect Selected Groups
+      </text>
+    </g>
+  </g>
+
+  <!-- Floating Elements -->
+  <g transform="translate(100, 100)">
+    <circle cx="32" cy="32" r="32" fill="rgba(51, 35, 123, 0.04)"/>
+    <circle cx="32" cy="32" r="30" fill="white" stroke="rgba(182, 182, 209, 0.15)"/>
+    <image href="https://framerusercontent.com/images/vPHcF8ebAE3V4agsiVIp80vENLQ.png" 
+      x="8" y="8" width="48" height="48" clip-path="circle(24 at 24 24)"/>
+  </g>
+
+  <!-- App Icons -->
+  <g transform="translate(600, 80)">
+    <rect width="64" height="64" rx="16" fill="white" filter="drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.05))"/>
+    <image href="https://framerusercontent.com/images/Mqn9OI5qLCev8cLF2S7v1EmcGu4.png" 
+      x="16" y="16" width="32" height="32"/>
+  </g>
+  <g transform="translate(600, 160)">
+    <rect width="64" height="64" rx="16" fill="white" filter="drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.05))"/>
+    <image href="https://framerusercontent.com/images/TUp5Jtvnqo2DJmjzg8v5c17Ps.png" 
+      x="16" y="16" width="32" height="32"/>
+  </g>
+</svg> 

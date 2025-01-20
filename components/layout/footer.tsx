@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Twitter, Linkedin } from 'lucide-react'
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
 
 export function Footer() {
   return (
@@ -30,9 +31,12 @@ export function Footer() {
           {/* Right Column */}
           <div className="space-y-4">
             <nav className="space-y-3">
-              <Link href="/contact" className="block text-gray-600 hover:text-gray-900">
+              <a 
+                href="mailto:support@bridge23.app" 
+                className="block text-gray-600 hover:text-gray-900"
+              >
                 Contact Us
-              </Link>
+              </a>
               <Link href="/security" className="block text-gray-600 hover:text-gray-900">
                 Security
               </Link>
@@ -44,24 +48,50 @@ export function Footer() {
               </Link>
             </nav>
             <div className="flex gap-4 pt-2">
-              <a 
-                href="https://twitter.com/bridge23ai" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-900"
+              <Button
+                variant="ghost"
+                size="icon"
+                asChild
+                className="hover:bg-transparent"
               >
-                <Twitter className="w-6 h-6" />
-                <span className="sr-only">Twitter</span>
-              </a>
-              <a 
-                href="https://linkedin.com/company/bridge23inc" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-900"
+                <a 
+                  href="https://twitter.com/bridge23ai" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-gray-900"
+                >
+                  <Image 
+                    src="/social/x/X-logo.svg" 
+                    alt="X (formerly Twitter)"
+                    width={24}
+                    height={24}
+                    className="dark:invert"
+                  />
+                  <span className="sr-only">X (formerly Twitter)</span>
+                </a>
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                asChild
+                className="hover:bg-transparent"
               >
-                <Linkedin className="w-6 h-6" />
-                <span className="sr-only">LinkedIn</span>
-              </a>
+                <a 
+                  href="https://linkedin.com/company/bridge23inc" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-gray-900"
+                >
+                  <Image 
+                    src="/social/linkedin/LI-Logo.svg" 
+                    alt="LinkedIn"
+                    width={24}
+                    height={24}
+                    className="dark:invert"
+                  />
+                  <span className="sr-only">LinkedIn</span>
+                </a>
+              </Button>
             </div>
           </div>
         </div>
