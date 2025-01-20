@@ -7,8 +7,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Bridge23 - AI Assistant Platform',
-  description: 'Your all-in-one AI assistant for conversations and community',
+  title: 'Bridge23',
+  description: 'Automated planning and task execution for teams and communities',
 }
 
 export default function RootLayout({
