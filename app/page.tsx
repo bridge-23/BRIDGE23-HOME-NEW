@@ -5,7 +5,6 @@ import { IntegrationsSection } from "@/components/sections/integrations-section"
 import { TestimonialSection } from "@/components/sections/testimonial-section"
 import { FaqSection } from "@/components/sections/faq-section"
 import { CtaSection } from "@/components/sections/cta-section"
-import { GrantsSection } from "@/components/sections/grants-section"
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
       <HowItWorksSection />
       <IntegrationsSection />
       <TestimonialSection />
-      <GrantsSection />
       <FaqSection />
       <CtaSection />
     </div>
