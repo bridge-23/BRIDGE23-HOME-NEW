@@ -32,13 +32,13 @@ const features: Feature[] = [
 export function FeaturesSection() {
   return (
     <section className="py-24 bg-white">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6 md:px-12 lg:px-48">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight text-center mb-12">
           Get the most out of every meeting
         </h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="flex flex-col space-y-8">
           {features.map((feature, index) => (
-            <FeatureCard key={index} feature={feature} />
+            <FeatureCard key={index} feature={feature} index={index} />
           ))}
         </div>
       </div>

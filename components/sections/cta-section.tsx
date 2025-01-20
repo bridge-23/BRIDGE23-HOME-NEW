@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from 'next/link';
+import { StartFreeButton } from "@/components/ui/start-free-button"
 
 export function CtaSection() {
   return (
@@ -9,11 +10,7 @@ export function CtaSection() {
           Try it <span className="text-[#FF5C35]">free</span> for 7 days.{" "}
           <span className="block">Subscribe if you love it.</span>
         </h2>
-        <Link href="https://beta.bridge23.app/">
-          <Button className="bg-[#FF5C35] text-white hover:bg-[#E54E2B] h-12 px-8 text-lg">
-            Start for free
-          </Button>
-        </Link>
+        <StartFreeButton />
       </div>
     </section>
   )

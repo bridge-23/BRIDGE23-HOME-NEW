@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from 'next/link'
+import { StartFreeButton } from "@/components/ui/start-free-button"
 
 export function HeroHeader() {
   return (
@@ -11,11 +12,7 @@ export function HeroHeader() {
         <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8 md:mb-10 lg:mb-12">
             Automated planning and task execution for teams and communities
         </p>
-        <Link href="https://beta.bridge23.app/">
-          <Button className="bg-[#FF5C35] text-white hover:bg-[#E54E2B] h-12 px-8 text-lg transition-all duration-200 transform hover:scale-105">
-            Start for free
-          </Button>
-        </Link>
+        <StartFreeButton />
       </div>
       <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 mt-16">
         <div className="flex flex-col items-center gap-1 text-gray-500 hover:text-gray-700 transition-colors">
