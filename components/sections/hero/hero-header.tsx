@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from 'next/link'
+import Image from 'next/image'
 import { StartFreeButton } from "@/components/ui/start-free-button"
 
 export function HeroHeader() {
@@ -24,24 +25,30 @@ export function HeroHeader() {
           <span className="text-xl md:text-2xl font-bold text-gray-900">3,300+</span>
           <span className="text-sm md:text-base">Total Users</span>
         </div>
-        <div className="h-4 w-px bg-gray-300 hidden sm:block" />
-        <div className="flex flex-col items-center gap-1 text-gray-500 hover:text-gray-700 transition-colors">
-          <span className="text-xl md:text-2xl font-bold text-gray-900">$180K</span>
-          <span className="text-sm md:text-base">Funds Secured</span>
-        </div>
       </div>
       <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 mt-8">
-        <div className="flex items-center gap-2 text-gray-500 hover:text-gray-700 transition-colors">
-          <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/X%20Dev%20Updates%20%20(3)-fVFePGGQDbUrixB9HaJaM1slkQg58p.png"
-            alt="DFINITY Foundation Logo"
-            className="h-6 md:h-7 object-contain grayscale opacity-80 hover:opacity-100 transition-opacity"
+        <a href="https://dfinity.org/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-500 hover:text-gray-700 transition-colors">
+          <Image
+            src="/partners/ICP/ICP-Logo.png"
+            alt="ICP Logo"
+            width={80}
+            height={28}
+            className="object-contain opacity-80 hover:opacity-100 transition-opacity"
           />
-          <span className="text-sm md:text-base font-medium">DFINITY - IExec Grant Recipient</span>
-        </div>
+        </a>
+        <div className="h-4 w-px bg-gray-300 hidden sm:block" />
+        <a href="https://www.iex.ec/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-500 hover:text-gray-700 transition-colors">
+          <Image
+            src="/partners/iExec/iExec-Logo.png"
+            alt="iExec Logo"
+            width={80}
+            height={28}
+            className="object-contain opacity-80 hover:opacity-100 transition-opacity"
+          />
+        </a>
         <div className="h-4 w-px bg-gray-300 hidden sm:block" />
         <div className="flex items-center gap-2 text-gray-500 hover:text-gray-700 transition-colors">
-          <span className="text-sm md:text-base font-medium">🏆 Triple Hackathon Champion</span>
+          <span className="text-sm md:text-base font-medium"> Triple Hackathon Champion</span>
         </div>
       </div>
     </div>

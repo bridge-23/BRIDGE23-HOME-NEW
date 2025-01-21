@@ -10,8 +10,8 @@ const plans: PricingPlan[] = [
     name: "Individual",
     description: "Ideal for solo creators and independent professionals",
     price: {
-      monthly: "20.83",
-      yearly: "16.67"
+      monthly: "20.00",
+      yearly: "14.00"
     },
     buttonText: "Start for free",
     features: [
@@ -28,8 +28,8 @@ const plans: PricingPlan[] = [
     name: "Team",
     description: "Perfect for collaborative teams",
     price: {
-      monthly: "25",
-      yearly: "20"
+      monthly: "25.00",
+      yearly: "20.00"
     },
     buttonText: "Start for free",
     isPopular: true,
@@ -79,25 +79,25 @@ export default function PricingPage() {
         </h2>
 
         <div className="flex flex-col items-center gap-2 mb-8 md:mb-16">
-          <Tabs defaultValue="monthly" value={billingPeriod} onValueChange={handlePeriodChange} className="w-[300px]">
-            <TabsList className="grid w-full grid-cols-2 bg-gray-200 p-1 rounded-lg">
+          <Tabs defaultValue="monthly" value={billingPeriod} onValueChange={handlePeriodChange} className="w-full max-w-[300px]">
+            <TabsList className="grid w-full grid-cols-2 p-1 rounded-full bg-[#F8F8FB]">
               <TabsTrigger 
                 value="monthly" 
-                className="rounded-md data-[state=active]:bg-white data-[state=active]:shadow-sm border border-transparent data-[state=active]:border-gray-200"
+                className="rounded-full px-6 py-2.5 text-sm font-medium text-[#11141A] data-[state=active]:bg-white data-[state=active]:text-[#11141A] data-[state=active]:shadow-[0_2px_8px_rgba(0,0,0,0.08)] transition-all duration-200"
               >
                 Monthly
               </TabsTrigger>
               <TabsTrigger 
                 value="yearly"
-                className="rounded-md data-[state=active]:bg-white data-[state=active]:shadow-sm border border-transparent data-[state=active]:border-gray-200"
+                className="rounded-full px-6 py-2.5 text-sm font-medium text-[#11141A] data-[state=active]:bg-white data-[state=active]:text-[#11141A] data-[state=active]:shadow-[0_2px_8px_rgba(0,0,0,0.08)] transition-all duration-200"
               >
                 Yearly
               </TabsTrigger>
             </TabsList>
           </Tabs>
-          {billingPeriod === 'monthly' && (
-            <span className="text-sm italic text-gray-600">
-              Get two months free in the yearly plan
+          {billingPeriod === 'yearly' && (
+            <span className="text-sm text-[#4262FF]">
+              Get two months free
             </span>
           )}
         </div>

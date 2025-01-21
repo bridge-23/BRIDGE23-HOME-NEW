@@ -47,7 +47,7 @@ const mockGroups: ChatGroup[] = [
 
 const sourceIcons = {
   telegram: {
-    src: '/social/telegram/Telegram-Logo.svg',
+    src: '/social/telegram/TelegramLogo.png',
     bgColor: 'bg-[#2AABEE]',
     iconClass: 'w-4 h-4'
   },
@@ -81,46 +81,59 @@ const formatMemberCount = (count: number) => {
 
 export function HomeView() {
   return (
-   
-    
-      <div className="space-y-4">
-        <h2 className="text-xl md:text-2xl font-bold text-[#11141A] tracking-tight">Marketing Group </h2>
-        <div className="flex flex-col space-y-4">
-          <h3 className="text-sm font-bold text-[#807E96]">Action Items</h3>
-          <div className="space-y-4">
-            {[
-              {
-                image: "https://ichef.bbci.co.uk/news/480/cpsprodpb/0d12/live/050ae0d0-d500-11ef-87df-d575b9a434a4.jpg.webp",
-                name: "Donald Trump",
-                task: "Make proposal for a new MEGA",
-                description: "Detailed for location, budget, and timeline"
-              },
-              {
-                image: "https://imageio.forbes.com/specials-images/imageserve/62d700cd6094d2c180f269b9/0x0.jpg?format=jpg&crop=959,959,x0,y0,safe&height=416&width=416&fit=bounds",
-                name: "Elon Musk",
-                task: "Confirm launch date",
-                description: "Review proposal and confirm launch date"
-              }
-            ].map((item, index) => (
-              <Card key={index} className="p-3 md:p-4 border-2 border-[rgba(182,182,209,0.32)] rounded-[32px] space-y-2">
-                <div className="flex items-center gap-3">
-                  <div className="w-[34px] h-[34px] rounded-full bg-[#F4F4F8] flex items-center justify-center">
-                    <img src={item.image || "/placeholder.svg"} alt={item.name} className="w-5 h-5" />
+      <div className="space-y-6 p-2 md:p-4">
+        <h2 className="text-xl md:text-2xl font-bold text-[#11141A] tracking-tight"> Discord Group Sprint 7 </h2>
+        <div className="flex flex-col space-y-6">
+          <div>
+            <h3 className="text-sm font-bold text-[#807E96] mb-4">Summary</h3>
+            <div className="space-y-3">
+              {[
+                {
+                  image: "/team/Wira.JPG",
+                  name: "Wira",
+                  task: "Create release note",
+                  description: "Detailed informaition for security release"
+                },
+                {
+                  image: "/bridge23/Centurio.PNG",
+                  name: "Agent Centurio",
+                  task: "Draft for Roadmap on sprint 8",
+                  description: "Take info from Seva for sprint 8 and CMO"
+                }
+              ].map((item, index) => (
+                <Card 
+                  key={index} 
+                  className="p-4 md:p-5 border-2 border-[rgba(182,182,209,0.32)] rounded-[32px] space-y-3 hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:bg-gray-50/50 cursor-pointer"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="w-[42px] h-[42px] rounded-full bg-[#F4F4F8] flex items-center justify-center overflow-hidden p-[2px] border border-[#4262FF]/10 transition-transform duration-200 group-hover:scale-105">
+                      <img src={item.image || "/placeholder.svg"} alt={item.name} className="w-full h-full object-cover rounded-full" />
+                    </div>
+                    <p className="font-medium text-sm md:text-[15px] text-[#333333]">{item.name}</p>
                   </div>
-                  <p className="font-medium text-sm md:text-[15px] text-[#333333]">{item.name}</p>
-                </div>
-                <p className="font-semibold text-sm md:text-[15px] text-[#141825]">{item.task}</p>
-                <p className="text-sm md:text-[15px] text-[#807E96]">{item.description}</p>
-              </Card>
-            ))}
+                  <p className="font-semibold text-sm md:text-[15px] text-[#141825] px-1">{item.task}</p>
+                  <p className="text-sm md:text-[15px] text-[#807E96] px-1">{item.description}</p>
+                </Card>
+              ))}
+            </div>
           </div>
-          <div className="space-y-4 mt-6">
-            <h3 className="text-sm font-bold text-[#807E96]">Overview</h3>
-            <p className="text-sm md:text-[15px] text-[#333333] leading-[22px]">Donald Trump and Elon Musk finalized planning for MEGA</p>
-            <p className="text-sm md:text-[15px] text-[#1C1B1B] leading-[22px]"> Make proposal for a new MEGA</p>
-            <p className="text-sm md:text-[15px] text-[#1C1B1B] leading-[22px]"> Trump and Musk agreed on the proposal</p>
-            <p className="text-sm md:text-[15px] text-[#1C1B1B] leading-[22px]"> Discover Mars Resources</p>
-            <p className="text-sm md:text-[15px] text-[#1C1B1B] leading-[22px]"> Create MARS constitution</p>
+
+          <div>
+            <h3 className="text-sm font-bold text-[#807E96] mb-4">Overview</h3>
+            <div className="space-y-3">
+              <div className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors">
+                <span className="text-[#4262FF] animate-pulse">✨</span>
+                <p className="text-sm md:text-[15px] text-[#333333] leading-[22px]">Centurio make deep research for Atlasian integration</p>
+              </div>
+              <div className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors">
+                <span className="text-[#4262FF] animate-pulse">✨</span>
+                <p className="text-sm md:text-[15px] text-[#1C1B1B] leading-[22px]">Seva make blueprint for new feature</p>
+              </div>
+              <div className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors">
+                <span className="text-[#4262FF] animate-pulse">✨</span>
+                <p className="text-sm md:text-[15px] text-[#1C1B1B] leading-[22px]">Seva and Wira make proposal for new feature</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -243,16 +256,41 @@ export function GroupsView() {
 
 export function ActionItemsView() {
   return (
-    <div className="space-y-4">
-      <h3 className="text-xl font-bold text-[#11141A]">Action Items</h3>
-      <div className="space-y-2">
-        <div className="flex items-center gap-2">
-          <CheckSquare className="w-5 h-5 text-[#FF5C35]" />
-          <span>Review product launch materials</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <CheckSquare className="w-5 h-5 text-[#FF5C35]" />
-          <span>Schedule team meeting for next week</span>
+    <div className="space-y-6 p-2 md:p-4">
+      <h2 className="text-xl md:text-2xl font-bold text-[#11141A] tracking-tight">Action Items</h2>
+      <div className="flex flex-col space-y-6">
+        <div>
+          <h3 className="text-sm font-bold text-[#807E96] mb-4">Tasks</h3>
+          <div className="space-y-3">
+            {[
+              {
+                task: "Review product launch materials",
+                status: "In Progress",
+                dueDate: "Today"
+              },
+              {
+                task: "Schedule team meeting for next week",
+                status: "Pending",
+                dueDate: "Tomorrow"
+              }
+            ].map((item, index) => (
+              <Card 
+                key={index}
+                className="p-4 md:p-5 border-2 border-[rgba(182,182,209,0.32)] rounded-[32px] space-y-3 hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:bg-gray-50/50 cursor-pointer"
+              >
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <CheckSquare className="w-5 h-5 text-[#4262FF]" />
+                    <p className="font-medium text-sm md:text-[15px] text-[#333333]">{item.task}</p>
+                  </div>
+                  <Badge variant="secondary" className="bg-[#F4F4F8] text-[#4262FF] text-xs">
+                    {item.dueDate}
+                  </Badge>
+                </div>
+                <p className="text-sm md:text-[15px] text-[#807E96] px-1">{item.status}</p>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </div>
@@ -261,20 +299,51 @@ export function ActionItemsView() {
 
 export function AutomationsView() {
   return (
-    <div className="space-y-4">
-      <h3 className="text-xl font-bold text-[#11141A]">Automations</h3>
-      <p className="text-[#807E96]">Set up workflows to automate your tasks.</p>
-      <Button className="bg-[#FF5C35] text-white hover:bg-[#E54E2B]">Create New Automation</Button>
+    <div className="space-y-6 p-2 md:p-4">
+      <h2 className="text-xl md:text-2xl font-bold text-[#11141A] tracking-tight">Automations</h2>
+      <div className="flex flex-col space-y-6">
+        <div>
+          <h3 className="text-sm font-bold text-[#807E96] mb-4">Workflows</h3>
+          <div className="space-y-3">
+            <Card className="p-4 md:p-5 border-2 border-[rgba(182,182,209,0.32)] rounded-[32px] space-y-3">
+              <p className="text-[#807E96] text-sm md:text-[15px]">Set up workflows to automate your tasks.</p>
+              <Button className="bg-[#4262FF] text-white hover:bg-[#3251EE] transition-colors">Create New Automation</Button>
+            </Card>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
 
 export function InsightsView() {
   return (
-    <div className="space-y-4">
-      <h3 className="text-xl font-bold text-[#11141A]">Insights</h3>
-      <p className="text-[#807E96]">Analytics and insights for your projects and teams.</p>
-      {/* Add charts or analytics components here */}
+    <div className="space-y-6 p-2 md:p-4">
+      <h2 className="text-xl md:text-2xl font-bold text-[#11141A] tracking-tight">Insights</h2>
+      <div className="flex flex-col space-y-6">
+        <div>
+          <h3 className="text-sm font-bold text-[#807E96] mb-4">Analytics</h3>
+          <div className="space-y-3">
+            <Card className="p-4 md:p-5 border-2 border-[rgba(182,182,209,0.32)] rounded-[32px] space-y-3">
+              <p className="text-[#807E96] text-sm md:text-[15px]">Analytics and insights for your projects and teams.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <Card className="p-3 border border-[rgba(182,182,209,0.15)] rounded-2xl bg-[#F4F4F8]">
+                  <div className="flex items-center justify-between">
+                    <p className="text-sm font-medium">Total Tasks</p>
+                    <Badge variant="secondary" className="bg-white text-[#4262FF]">24</Badge>
+                  </div>
+                </Card>
+                <Card className="p-3 border border-[rgba(182,182,209,0.15)] rounded-2xl bg-[#F4F4F8]">
+                  <div className="flex items-center justify-between">
+                    <p className="text-sm font-medium">Completed</p>
+                    <Badge variant="secondary" className="bg-white text-[#4262FF]">18</Badge>
+                  </div>
+                </Card>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
