@@ -95,7 +95,7 @@ export function HomeView() {
                   description: "Detailed informaition for security release"
                 },
                 {
-                  image: "/bridge23/Centurio.PNG",
+                  image: "/bridge23/Centurio.png",
                   name: "Agent Centurio",
                   task: "Draft for Roadmap on sprint 8",
                   description: "Take info from Seva for sprint 8 and CMO"

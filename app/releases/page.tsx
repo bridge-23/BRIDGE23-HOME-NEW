@@ -3,14 +3,14 @@ import Image from "next/image"
 
 const releases = [
   {
-    date: "January 15, 2025",
-    title: "Open meeting calendar event",
-    description: "You can now open a meeting's calendar event in Google Calendar or Microsoft Outlook by right-clicking or selecting ... on the meeting. This makes it easy to quickly view or edit the calendar event details.",
+    date: "January 9, 2025",
+    title: "Dev Update v.0.14.4",
+    description: "Full-screen View in Telegram mini-app, Advanced Web Search Tool enhancements,iExec Data Protector Tool integration",
   },
   {
-    date: "January 13, 2025",
-    title: "Improvements to the meetings page",
-    description: "We've updated the meetings page to make it easier to navigate your meetings. You'll now see profile pictures of the invitees next to each meeting, along with colour-coded tags to help differentiate meeting types. To see the full date and time of a meeting, simply hover over the date on the right side.",
+    date: "December 24, 2024",
+    title: "Enhanced memory: from 50 to 500 messages",
+    description: "Dev Update v.0.14.3 is Live! Enhanced memory: from 50 to 500 messages, New agent settings: personal & group modes, Improved web search tool, Upcoming: Boost memory to 5,000 messages per response, iExec data protector tool, Chat credits for verified portfolio data, Agentic Team: Advanced group management and task assignment features",
   }
 ]
 
