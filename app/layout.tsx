@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: 'Bridge23 - Superior Team and Community Management',
     description: 'Automated planning and task execution for teams and communities',
     creator: '@bridge23ai',
-    images: ['/bridge23/twitter-image.png'],
+    images: ['/bridge23/x-image.png'],
   },
   robots: {
     index: true,
