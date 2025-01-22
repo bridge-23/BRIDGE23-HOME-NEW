@@ -19,11 +19,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Bridge23 - Superior Team and Community Management',
     description: 'Automated planning and task execution for teams and communities',
-    url: 'https://bridge23.app',
+    url: 'https://www.bridge23.app',
     siteName: 'Bridge23',
     images: [
       {
-        url: '/bridge23/og-image.png',
+        url: 'https://www.bridge23.app/bridge23/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Bridge23',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: 'Bridge23 - Superior Team and Community Management',
     description: 'Automated planning and task execution for teams and communities',
     creator: '@bridge23ai',
-    images: ['/bridge23/x-image.png'],
+    images: ['https://www.bridge23.app/bridge23/x-image.png'],
   },
   robots: {
     index: true,
