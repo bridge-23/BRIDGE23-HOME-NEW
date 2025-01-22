@@ -69,8 +69,8 @@ export default function PricingPage() {
   }
 
   return (
-    <div className="min-h-screen py-16 px-4">
-      <div className="max-w-7xl mx-auto text-center">
+    <div className="min-h-screen pt-16 md:pt-20">
+      <div className="max-w-7xl mx-auto text-center px-4">
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#141925] mb-4">
           Try it 7 days <span className="text-[#FF5C35]">for free</span>.
         </h1>

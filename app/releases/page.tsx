@@ -16,8 +16,8 @@ const releases = [
 
 export default function ReleasesPage() {
   return (
-    <div className="min-h-screen py-16 px-4">
-      <div className="max-w-3xl mx-auto">
+    <div className="min-h-screen pt-16 md:pt-20">
+      <div className="max-w-3xl mx-auto px-4">
         <div className="text-center mb-12 md:mb-16">
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#141925] mb-4">
             Releases

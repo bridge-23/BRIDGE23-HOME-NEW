@@ -23,7 +23,7 @@ export function HeroSection() {
   const ActiveComponent = tabComponents[activeTab]
 
   return (
-    <section className="bg-gradient-to-b from-blue-50 to-white pt-8 md:pt-32 pb-4 md:pb-16">
+    <section className="bg-gradient-to-b from-blue-50 to-white pt-16 md:pt-20">
       <div className="container mx-auto px-2 md:px-4">
         <HeroHeader />
         <div className="flex flex-col lg:flex-row gap-3 border rounded-[24px] md:rounded-[44px] p-2 md:p-4 bg-white/40 backdrop-blur-sm shadow-lg lg:h-[600px] max-w-[1200px] mx-auto">

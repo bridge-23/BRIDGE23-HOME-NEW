@@ -1,6 +1,6 @@
 export default function TermsOfService() {
   return (
-    <div className="container mx-auto px-4 py-12 max-w-4xl">
+    <div className="container mx-auto px-4 pt-16 md:pt-20 max-w-4xl">
       <h1 className="text-4xl font-bold mb-8">Terms of Service</h1>
       <p className="text-gray-600 mb-8"><strong>Effective date:</strong> January 20, 2024</p>
 

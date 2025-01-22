@@ -19,7 +19,7 @@ export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50 border-b">
+    <nav className="fixed top-0 w-full backdrop-blur-sm z-50">
       <div className="max-w-full mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-2xl font-bold text-black">Bridge23</Link>

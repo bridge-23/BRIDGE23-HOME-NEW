@@ -61,7 +61,7 @@ export default function RootLayout({
       <body className={`${inter.className} min-h-screen flex flex-col`}>
         <ErrorBoundary>
           <Navigation />
-          <main className="pt-16 md:pt-20 flex-1">
+          <main className="flex-1">
             {children}
           </main>
           <Footer />
