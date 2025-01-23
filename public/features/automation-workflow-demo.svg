@@ -5,7 +5,7 @@
   <!-- Header -->
   <g transform="translate(40, 40)">
     <text x="0" y="0" font-family="Plus Jakarta Sans" font-size="18" font-weight="700" fill="#11141A">
-      Demo for Cate
+      Demo for SG
     </text>
   </g>
 
@@ -58,7 +58,7 @@
       <g>
         <rect width="672" height="60" rx="8" fill="#F9F9FB"/>
         <text x="16" y="35" font-family="Plus Jakarta Sans" font-size="14" fill="#807E96">
-          When <tspan fill="#4262FF">new message in Telegram</tspan> → Send to WhatsApp group
+          When <tspan fill="#4262FF"> 8pm review work group in Telegram</tspan> → Send Summary and Task to Notion Page
         </text>
       </g>
 
@@ -66,7 +66,7 @@
       <g transform="translate(0, 80)">
         <rect width="672" height="60" rx="8" fill="#F9F9FB"/>
         <text x="16" y="35" font-family="Plus Jakarta Sans" font-size="14" fill="#807E96">
-          When <tspan fill="#25D366">task completed in WhatsApp</tspan> → Post update to X
+          When <tspan fill="#25D366">task completed in WhatsApp</tspan> → Post update Notion
         </text>
       </g>
     </g>

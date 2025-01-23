@@ -107,7 +107,18 @@ export function HomeView() {
                 >
                   <div className="flex items-center gap-3">
                     <div className="w-[42px] h-[42px] rounded-full bg-[#F4F4F8] flex items-center justify-center overflow-hidden p-[2px] border border-[#4262FF]/10 transition-transform duration-200 group-hover:scale-105">
-                      <img src={item.image || "/placeholder.svg"} alt={item.name} className="w-full h-full object-cover rounded-full" />
+                      <Image
+                        src={item.image}
+                        alt={item.name}
+                        width={42}
+                        height={42}
+                        className="w-full h-full object-cover rounded-full"
+                        priority
+                        onError={(e) => {
+                          // @ts-ignore
+                          e.target.src = "/bridge23/Agent.png"
+                        }}
+                      />
                     </div>
                     <p className="font-medium text-sm md:text-[15px] text-[#333333]">{item.name}</p>
                   </div>

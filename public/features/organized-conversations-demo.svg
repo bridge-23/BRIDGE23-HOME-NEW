@@ -5,7 +5,7 @@
   <!-- Header -->
   <g transform="translate(40, 40)">
     <text x="0" y="0" font-family="Plus Jakarta Sans" font-size="18" font-weight="700" fill="#11141A">
-      Brianne <tspan fill="#807E96">&lt;&gt;</tspan> Amir Weekly
+      Nick <tspan fill="#807E96">&lt;&gt;</tspan> Wira Marketing
     </text>
   </g>
 
@@ -20,7 +20,7 @@
       <g transform="translate(0, 40)">
         <rect width="680" height="80" rx="12" fill="#FFFFFF" stroke="#E6E6F0" stroke-width="1"/>
         <text x="16" y="30" font-family="Plus Jakarta Sans" font-size="14" fill="#807E96">
-          <tspan>Brianne reported </tspan>
+          <tspan>Wira reported </tspan>
           <tspan font-weight="700">127% increase</tspan>
           <tspan> in landing page conversions after last update</tspan>
         </text>
@@ -40,7 +40,7 @@
         <text x="16" y="30" font-family="Plus Jakarta Sans" font-size="14" fill="#807E96">
           <tspan>Team decided to allocate </tspan>
           <tspan font-weight="700">$15,000</tspan>
-          <tspan> for Q4 Facebook ads, campaign to launch </tspan>
+          <tspan> for Q4 X ads, campaign to launch </tspan>
           <tspan font-weight="700">November 20th</tspan>
         </text>
       </g>

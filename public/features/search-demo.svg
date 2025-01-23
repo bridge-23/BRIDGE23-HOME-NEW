@@ -6,7 +6,7 @@
   <g transform="translate(40, 40)">
     <rect width="720" height="60" rx="16" fill="#F4F4F8"/>
     <text x="24" y="35" font-family="Plus Jakarta Sans" font-size="14" fill="#807E96">
-      what time did linda say she was free?
+      what time did Seva say he was free?
     </text>
   </g>
 
@@ -33,7 +33,7 @@
       <g transform="translate(0, 24)">
         <rect width="48" height="24" rx="12" fill="rgba(188, 188, 204, 0.15)"/>
         <text x="12" y="16" font-family="Plus Jakarta Sans" font-size="12" fill="#807E96">
-          Linda
+          Seva
         </text>
         
         <text x="60" y="16" font-family="Plus Jakarta Sans" font-size="14" fill="#807E96">
@@ -49,7 +49,7 @@
   <g transform="translate(40, 300)">
     <rect width="720" height="80" rx="16" fill="#F9F9FB" opacity="0.8"/>
     <text x="24" y="45" font-family="Plus Jakarta Sans" font-size="14" fill="#807E96">
-      Found 3 more mentions of Linda's availability...
+      Found 3 more mentions of Seva's availability...
     </text>
   </g>
 
