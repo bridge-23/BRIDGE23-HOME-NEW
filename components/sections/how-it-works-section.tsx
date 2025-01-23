@@ -171,7 +171,7 @@ export function HowItWorksSection() {
                     <span className="px-2 py-1 bg-yellow-100 rounded text-sm">Engineering Team</span>
                     <span className="px-2 py-1 bg-blue-100 rounded text-sm">Daily summary</span>
                   </div>
-                  <div className="text-lg font-semibold mb-2">Wira <span className="text-gray-400">&lt;&gt;</span> Centurio</div>
+                  <div className="text-lg font-semibold mb-2">Bridge23 <span className="text-gray-400">&lt;&gt;</span> xAI</div>
                   <div className="w-full h-2 bg-gray-200 rounded"></div>
                 </div>
                 <div className="bg-gray-50 rounded-lg p-4">
@@ -179,7 +179,7 @@ export function HowItWorksSection() {
                     <span className="px-2 py-1 bg-yellow-100 rounded text-sm">Engineering Team</span>
                     <span className="px-2 py-1 bg-blue-100 rounded text-sm">Daily summary</span>
                   </div>
-                  <div className="text-lg font-semibold mb-2">Wira <span className="text-gray-400">&lt;&gt;</span> Centurio</div>
+                  <div className="text-lg font-semibold mb-2">Bridge23 <span className="text-gray-400">&lt;&gt;</span> Antropic</div>
                   <div className="w-full h-2 bg-gray-200 rounded"></div>
                 </div>
               </div>

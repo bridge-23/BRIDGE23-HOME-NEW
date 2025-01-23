@@ -4,6 +4,7 @@ export interface Feature {
   title: string
   description: string
   icon: LucideIcon
-  image: string
+  gradient?: string
+  demoComponent?: React.ReactNode
 }
 
