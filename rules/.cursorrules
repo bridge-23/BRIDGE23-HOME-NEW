@@ -1,0 +1,46 @@
+# Project Overview
+
+This project, named Bridge23, is a superior team and community management platform built using Next.js and TypeScript. It provides automated planning and task execution capabilities for teams and communities.
+
+# Key URLs
+- Website: https://bridge23.app/
+- Beta App: https://beta.bridge23.app/
+
+# Project Structure
+- **app/**: Next.js app directory for routing and pages
+- **components/**: Reusable UI components
+- **public/**: Static assets and images
+- **types/**: TypeScript type definitions
+- **styles/**: Global styles and CSS
+
+# Development Guidelines
+- Use TypeScript for type safety
+- Follow the coding standards defined in ESLint configuration
+- Ensure all components are responsive and accessible
+- Use Tailwind CSS for styling
+- Follow the established design system and color palette
+
+# Important Scripts
+- `npm run dev`: Starts the development server
+- `npm run build`: Builds the application for production
+- `npm run start`: Runs the production server
+
+# Coding Standards
+- Use TypeScript for all new components and functions
+- Follow React best practices and hooks guidelines
+- Maintain consistent component structure
+- Write clear, self-documenting code
+- Handle errors gracefully and provide user feedback
+
+# Component Guidelines
+- Create reusable components in the components/ directory
+- Use proper TypeScript types and interfaces
+- Implement responsive design using Tailwind CSS
+- Follow accessibility best practices
+- Add proper documentation and props typing
+
+# Additional Resources
+- [Next.js Documentation](https://nextjs.org/docs)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [React Documentation](https://reactjs.org/docs/getting-started.html)

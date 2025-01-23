@@ -8,7 +8,7 @@ export function HeroHeader() {
     <div className="py-2 md:py-2 lg:py-10">
       <div className="text-center mb-12 md:mb-16 lg:mb-20">
         <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-gray-900 max-w-4xl mx-auto leading-tight mb-6 md:mb-8 lg:mb-10">
-            Superior Team and Community Management
+            Superior AI Agents for Team and Community Management
         </h1>
         <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8 md:mb-10 lg:mb-12">
             Automated planning and task execution for teams and communities
