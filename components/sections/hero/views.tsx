@@ -89,7 +89,7 @@ export function HomeView() {
             <div className="space-y-3">
               {[
                 {
-                  image: "/team/Wira.JPG",
+                  image: "/team/Wira.png",
                   name: "Wira",
                   task: "Create release note",
                   description: "Detailed informaition for security release"

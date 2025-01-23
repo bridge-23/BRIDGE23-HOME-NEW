@@ -136,7 +136,7 @@ export function HowItWorksSection() {
               <div className="relative">
                 <div className="flex -space-x-4">
                   <img src="/bridge23/Centurio.png" alt="Person 1" className="w-20 h-20 rounded-full border-4 border-white" />
-                  <img src="/team/Wira.jpg" alt="Person 2" className="w-20 h-20 rounded-full border-4 border-white" />
+                  <img src="/team/Wira.png" alt="Person 2" className="w-20 h-20 rounded-full border-4 border-white" />
                 </div>
                 <div className="flex justify-center gap-2 mt-4">
                   <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
