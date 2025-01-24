@@ -18,9 +18,8 @@ const plans: PricingPlan[] = [
       { description: "Meticulous notes, action items, and summary for unlimited groups" },
       { description: "AI-powered search across all your groups" },
       { description: "Use the group assistant to ask questions about your groups or do writing tasks" },
-      { description: "Record in-person meetings and import audio/video recordings" },
-      { description: "Video and audio playback" },
-      { description: "Easily integrate with Slack, Notion, HubSpot, Salesforce, Attio, Linear, monday.com, Zapier, and more" },
+      { description: "Record in-person chats and import chats history" },
+      { description: "Easily integrate with Discord, Slack, Notion, HubSpot, Zapier, and more" },
       { description: "Generate custom insights with AI" },
     ]
   },
@@ -69,7 +68,7 @@ export default function PricingPage() {
   }
 
   return (
-    <div className="min-h-screen pt-16 md:pt-20">
+    <div className="min-h-screen pt-16 pb-20 md:pt-20 md:pb-32">
       <div className="max-w-7xl mx-auto text-center px-4">
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-[#141925] mb-4">
           Try it 7 days <span className="text-[#FF5C35]">for free</span>.
@@ -104,11 +103,12 @@ export default function PricingPage() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {plans.map((plan) => (
-            <PricingCard
-              key={plan.name}
-              plan={plan}
-              billingPeriod={billingPeriod}
-            />
+            <div key={plan.name} className="flex flex-col h-full">
+              <PricingCard
+                plan={plan}
+                billingPeriod={billingPeriod}
+              />
+            </div>
           ))}
         </div>
       </div>
