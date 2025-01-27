@@ -49,17 +49,17 @@ const sourceIcons = {
   telegram: {
     src: '/social/telegram/TelegramLogo.png',
     bgColor: 'bg-[#2AABEE]',
-    iconClass: 'w-4 h-4'
+    iconClass: 'w-full h-full object-contain'
   },
   whatsapp: {
-    src: '/social/whatsapp/WhatsApp-Logo.svg',
+    src: '/social/whatsapp/WhatsApp-Logo.png',
     bgColor: 'bg-[#25D366]',
-    iconClass: 'w-4 h-4'
+    iconClass: 'w-full h-full object-contain'
   },
   x: {
     src: '/social/x/X-logo.svg',
     bgColor: 'bg-black',
-    iconClass: 'w-3.5 h-3.5'
+    iconClass: 'w-full h-full object-contain'
   }
 }
 
@@ -167,46 +167,46 @@ export function GroupsView() {
         </Button>
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {mockGroups.map((group) => (
           <Card 
             key={group.id} 
             className="hover:shadow-lg transition-all duration-200 hover:scale-[1.02] cursor-pointer"
           >
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <div className="flex items-center space-x-2">
-                <div className={`relative w-8 h-8 rounded-full overflow-hidden ${sourceIcons[group.source].bgColor} flex items-center justify-center`}>
+            <CardHeader className="flex flex-row items-start justify-between space-y-0 pb-2">
+              <div className="flex items-start space-x-3 min-w-0">
+                <div className={`relative w-10 h-10 shrink-0 rounded-full overflow-hidden ${sourceIcons[group.source].bgColor} flex items-center justify-center`}>
                   <Image
                     src={sourceIcons[group.source].src}
                     alt={group.source}
                     width={24}
                     height={24}
-                    className={`${sourceIcons[group.source].iconClass} brightness-0 invert`}
+                    className={`${sourceIcons[group.source].iconClass} brightness-0 invert p-2`}
                   />
                 </div>
-                <div>
-                  <CardTitle className="text-sm font-medium">
+                <div className="min-w-0">
+                  <CardTitle className="text-sm font-medium truncate pr-2">
                     {group.name}
                   </CardTitle>
-                  <div className="flex items-center gap-2">
-                    <p className="text-xs text-muted-foreground">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <p className="text-xs text-muted-foreground whitespace-nowrap">
                       via {group.source.charAt(0).toUpperCase() + group.source.slice(1)}
                     </p>
                     <span className="text-xs text-muted-foreground">•</span>
-                    <p className="text-xs text-muted-foreground hidden xs:block">
+                    <p className="text-xs text-muted-foreground whitespace-nowrap">
                       {formatMemberCount(group.members)} members
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col items-end gap-1">
+              <div className="flex flex-col items-end gap-1 ml-2 shrink-0">
                 <Badge 
                   variant="secondary" 
-                  className={`${sourceColors[group.source]} text-xs px-2 py-0.5`}
+                  className={`${sourceColors[group.source]} text-xs px-2 py-0.5 whitespace-nowrap`}
                 >
                   {formatMemberCount(group.members)}
                 </Badge>
-                <span className="text-[10px] text-muted-foreground hidden sm:block">
+                <span className="text-[10px] text-muted-foreground whitespace-nowrap">
                   members
                 </span>
               </div>
