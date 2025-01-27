@@ -9,7 +9,7 @@ export function HowItWorksSection() {
             Easy to start, simple to use
           </h2>
           <p className="text-lg md:text-xl text-gray-600">
-            Get started in two minutes. Add powerful automations to help you get more done.
+            Get started in two minutes. Let automations do the work for you.
           </p>
         </div>
 
@@ -123,7 +123,7 @@ export function HowItWorksSection() {
               Connect your groups
             </h3>
             <p className="text-sm md:text-base text-gray-600">
-              Connect your groups to get started.
+               Couple of clicks to get started.
             </p>
           </div>
 
@@ -155,7 +155,7 @@ export function HowItWorksSection() {
               Focus on your conversations
             </h3>
             <p className="text-gray-600">
-              Be fully present in your conversations.
+              Be fully prepared for the meeting.
             </p>
           </div>
 
@@ -188,7 +188,7 @@ export function HowItWorksSection() {
               Review your notes
             </h3>
             <p className="text-gray-600">
-              Review your notes and get a summary of the conversation.
+              Get a summary of the conversation.
             </p>
           </div>
         </div>

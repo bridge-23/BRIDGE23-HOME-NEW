@@ -8,6 +8,12 @@ import { SearchDemo } from '../features/search-demo'
 
 const features: Feature[] = [
   {
+    title: "Automate your workflow",
+    description: "Easily keep your apps in sync and save hours with AI-powered automation.",
+    icon: Zap,
+    demoComponent: <AutomationDemo />
+  },
+  {
     title: "Meticulous, organized groups",
     description: "Your AI assistant helps maintain clear, organized communication across all groups.",
     icon: MessageSquare,
@@ -20,14 +26,8 @@ const features: Feature[] = [
     demoComponent: <TasksDemo />
   },
   {
-    title: "Automate your workflow",
-    description: "Easily keep your apps in sync and save hours with AI-powered automation.",
-    icon: Zap,
-    demoComponent: <AutomationDemo />
-  },
-  {
     title: "Find key moments, instantly",
-    description: "Search through groups with AI-powered search that understands context.",
+    description: "Search through groups with AI-powered context understanding.",
     icon: Users,
     demoComponent: <SearchDemo />
   }

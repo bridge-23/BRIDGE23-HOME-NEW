@@ -40,7 +40,7 @@ export function IntegrationsSection() {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-4">Connect your favorite apps</h2>
         <p className="text-xl text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-          Integrate with the tools your team already uses and love.
+           Integrate AI Agents into familiar platforms.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
