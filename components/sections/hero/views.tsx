@@ -292,27 +292,69 @@ export function ActionItemsView() {
                 task: "Review product launch materials",
                 status: "In Progress",
                 dueDate: "Today",
+                priority: "High",
               },
               {
                 task: "Schedule team meeting for next week",
                 status: "Pending",
                 dueDate: "Tomorrow",
+                priority: "Medium",
               },
+              {
+                task: "Update API documentation",
+                status: "Not Started",
+                dueDate: "Next Week",
+                priority: "Low",
+              },
+              {
+                task: "Review pull requests",
+                status: "In Progress",
+                dueDate: "Today",
+                priority: "High",
+              },
+              {
+                task: "Prepare sprint retrospective",
+                status: "Not Started",
+                dueDate: "Friday",
+                priority: "Medium",
+              }
             ].map((item, index) => (
               <Card
                 key={index}
-                className="p-4 md:p-5 border-2 border-[rgba(182,182,209,0.32)] rounded-[32px] space-y-3 hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:bg-gray-50/50 cursor-pointer"
+                className="group p-4 md:p-5 border-2 border-[rgba(182,182,209,0.32)] rounded-[32px] space-y-3 
+                hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-gray-50/50 cursor-pointer
+                hover:border-[#4262FF]/20"
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <CheckSquare className="w-5 h-5 text-[#4262FF]" />
-                    <p className="font-medium text-sm md:text-[15px] text-[#333333]">{item.task}</p>
+                    <CheckSquare className="w-5 h-5 text-[#4262FF] group-hover:scale-110 transition-transform duration-300 group-hover:rotate-3" />
+                    <p className="font-medium text-sm md:text-[15px] text-[#333333] group-hover:text-[#4262FF] transition-colors duration-300">
+                      {item.task}
+                    </p>
                   </div>
-                  <Badge variant="secondary" className="bg-[#F4F4F8] text-[#4262FF] text-xs">
+                  <Badge 
+                    variant="secondary" 
+                    className={`bg-[#F4F4F8] text-[#4262FF] text-xs group-hover:bg-[#4262FF] group-hover:text-white transition-all duration-300 
+                    ${item.dueDate === 'Today' ? 'animate-pulse' : ''}`}
+                  >
                     {item.dueDate}
                   </Badge>
                 </div>
-                <p className="text-sm md:text-[15px] text-[#807E96] px-1">{item.status}</p>
+                <div className="flex justify-between items-center px-1">
+                  <p className="text-sm md:text-[15px] text-[#807E96] group-hover:text-[#666] transition-colors duration-300">
+                    {item.status}
+                  </p>
+                  <Badge 
+                    variant="outline" 
+                    className={`text-xs ${
+                      item.priority === 'High' ? 'text-red-500 bg-red-50' :
+                      item.priority === 'Medium' ? 'text-yellow-500 bg-yellow-50' :
+                      'text-green-500 bg-green-50'
+                    } group-hover:opacity-100 opacity-70 transition-opacity duration-300`}
+                  >
+                    {item.priority}
+                  </Badge>
+                </div>
               </Card>
             ))}
           </div>
