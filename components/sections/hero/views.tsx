@@ -120,7 +120,7 @@ export function HomeView() {
                 className="p-4 md:p-5 border-2 border-[rgba(182,182,209,0.32)] rounded-[32px] space-y-3 hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:bg-gray-50/50 cursor-pointer"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-[42px] h-[42px] rounded-full bg-[#F4F4F8] flex items-center justify-center overflow-hidden p-[2px] border border-[#4262FF]/10 transition-transform duration-200 group-hover:scale-105">
+                  <div className="w-[42px] h-[42px] rounded-full bg-[#F4F4F8] flex items-center justify-center overflow-hidden p-[2px] border border-[##FF5C35F]/10 transition-transform duration-200 group-hover:scale-105">
                     <Image
                       src={item.image || "/placeholder.svg"}
                       alt={item.name}
@@ -147,19 +147,19 @@ export function HomeView() {
           <h3 className="text-sm font-bold text-[#807E96] mb-4">Overview</h3>
           <div className="space-y-3">
             <div className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors">
-              <span className="text-[#4262FF] animate-pulse">✨</span>
+              <span className="text-[##FF5C35F] animate-pulse">✨</span>
               <p className="text-sm md:text-[15px] text-[#333333] leading-[22px]">
                 Centurio make deep research for Atlasian integration
               </p>
             </div>
             <div className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors">
-              <span className="text-[#4262FF] animate-pulse">✨</span>
+              <span className="text-[##FF5C35F] animate-pulse">✨</span>
               <p className="text-sm md:text-[15px] text-[#1C1B1B] leading-[22px]">
                 Seva make blueprint for new feature
               </p>
             </div>
             <div className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors">
-              <span className="text-[#4262FF] animate-pulse">✨</span>
+              <span className="text-[##FF5C35F] animate-pulse">✨</span>
               <p className="text-sm md:text-[15px] text-[#1C1B1B] leading-[22px]">
                 Seva and Wira make proposal for new feature
               </p>
@@ -208,7 +208,7 @@ export function GroupsView() {
                 </div>
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center justify-between">
-                    <CardTitle className="text-base font-semibold truncate pr-2 group-hover:text-[#4262FF] transition-colors duration-200">
+                    <CardTitle className="text-base font-semibold truncate pr-2 group-hover:text-[##FF5C35F] transition-colors duration-200">
                       {group.name}
                     </CardTitle>
                     <Badge
@@ -239,7 +239,7 @@ export function GroupsView() {
                   <Button
                     variant="ghost"
                     size="sm"
-                    className="h-8 text-xs font-medium hover:bg-[#4262FF] hover:text-white transition-colors duration-200 rounded-full px-4"
+                    className="h-8 text-xs font-medium hover:bg-[##FF5C35F] hover:text-white transition-colors duration-200 rounded-full px-4"
                   >
                     View Chat
                   </Button>
@@ -323,18 +323,18 @@ export function ActionItemsView() {
                 key={index}
                 className="group p-4 md:p-5 border-2 border-[rgba(182,182,209,0.32)] rounded-[32px] space-y-3 
                 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-gray-50/50 cursor-pointer
-                hover:border-[#4262FF]/20"
+                hover:border-[##FF5C35F]/20"
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <CheckSquare className="w-5 h-5 text-[#4262FF] group-hover:scale-110 transition-transform duration-300 group-hover:rotate-3" />
-                    <p className="font-medium text-sm md:text-[15px] text-[#333333] group-hover:text-[#4262FF] transition-colors duration-300">
+                    <CheckSquare className="w-5 h-5 text-[##FF5C35F] group-hover:scale-110 transition-transform duration-300 group-hover:rotate-3" />
+                    <p className="font-medium text-sm md:text-[15px] text-[#333333] group-hover:text-[##FF5C35F] transition-colors duration-300">
                       {item.task}
                     </p>
                   </div>
                   <Badge 
                     variant="secondary" 
-                    className={`bg-[#F4F4F8] text-[#4262FF] text-xs group-hover:bg-[#4262FF] group-hover:text-white transition-all duration-300 
+                    className={`bg-[#F4F4F8] text-[##FF5C35F] text-xs group-hover:bg-[##FF5C35F] group-hover:text-white transition-all duration-300 
                     ${item.dueDate === 'Today' ? 'animate-pulse' : ''}`}
                   >
                     {item.dueDate}
@@ -428,8 +428,8 @@ export function AutomationsView() {
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
           <h2 className="text-2xl md:text-3xl font-bold text-[#11141A] tracking-tight flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-[#4262FF]/10 flex items-center justify-center">
-              <svg className="w-6 h-6 text-[#4262FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="w-10 h-10 rounded-xl bg-[##FF5C35F]/10 flex items-center justify-center">
+              <svg className="w-6 h-6 text-[#FF5C35]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
@@ -441,7 +441,7 @@ export function AutomationsView() {
         </div>
         <Button
           size="lg"
-          className="bg-[#4262FF] text-white hover:bg-[#3251EE] transition-all duration-300 shadow-lg 
+          className="bg-[#FF5C35] text-white hover:bg-[#3251EE] transition-all duration-300 shadow-lg 
           hover:shadow-xl hover:scale-105 rounded-full gap-2 group"
         >
           <svg className="w-5 h-5 transition-transform group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -457,14 +457,14 @@ export function AutomationsView() {
           <Card 
             key={index} 
             className="group hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-white to-blue-50/50 
-            rounded-[24px] overflow-hidden border-2 hover:border-[#4262FF]/20"
+            rounded-[24px] overflow-hidden border-2 hover:border-[#FF5C35]/20"
           >
             <CardContent className="p-6 relative">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#4262FF]/5 rounded-full -mr-16 -mt-16 group-hover:scale-110 transition-transform duration-500" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#FF5C35]/5 rounded-full -mr-16 -mt-16 group-hover:scale-110 transition-transform duration-500" />
               <div className="relative">
                 <p className="text-sm font-medium text-[#807E96] mb-2">{stat.label}</p>
                 <div className="flex items-baseline gap-1">
-                  <p className="text-3xl md:text-4xl font-bold text-[#11141A] group-hover:text-[#4262FF] transition-colors">
+                  <p className="text-3xl md:text-4xl font-bold text-[#11141A] group-hover:text-[##FF5C35F] transition-colors">
                     {stat.value.split('/')[0]}
                   </p>
                   {stat.value.includes('/') && (
@@ -492,8 +492,8 @@ export function AutomationsView() {
       {/* Templates Section */}
       <div>
         <h3 className="text-lg font-semibold text-[#11141A] mb-6 flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-[#4262FF]/10 flex items-center justify-center">
-            <svg className="w-5 h-5 text-[#4262FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="w-8 h-8 rounded-lg bg-[##FF5C35F]/10 flex items-center justify-center">
+            <svg className="w-5 h-5 text-[#FF5C35]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
           </div>
@@ -504,12 +504,12 @@ export function AutomationsView() {
             <Card
               key={index}
               className="group hover:shadow-lg transition-all duration-300 hover:scale-[1.02] cursor-pointer 
-              border-2 rounded-[24px] overflow-hidden hover:border-[#4262FF]/20"
+              border-2 rounded-[24px] overflow-hidden hover:border-[##FF5C35F]/20"
             >
               <CardHeader className="space-y-0 p-6">
                 <div className="flex items-start justify-between">
-                  <div className="p-3 rounded-xl bg-[#4262FF]/5 group-hover:bg-[#4262FF]/10 transition-colors">
-                    <svg className="w-6 h-6 text-[#4262FF]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="p-3 rounded-xl bg-[##FF5C35F]/5 group-hover:bg-[##FF5C35F]/10 transition-colors">
+                    <svg className="w-6 h-6 text-[#FF5C35]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
                         d={template.icon === 'routing' ? "M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" :
                           template.icon === 'ai' ? "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" :
@@ -525,13 +525,13 @@ export function AutomationsView() {
                   </Badge>
                 </div>
                 <div className="mt-4">
-                  <CardTitle className="text-lg group-hover:text-[#4262FF] transition-colors">
+                  <CardTitle className="text-lg group-hover:text-[##FF5C35F] transition-colors">
                     {template.title}
                   </CardTitle>
                   <CardDescription className="text-sm mt-1">
                     {template.description}
                   </CardDescription>
-                  <p className="text-xs text-[#4262FF] mt-3 opacity-70 group-hover:opacity-100 transition-opacity">
+                  <p className="text-xs text-[##FF5C35F] mt-3 opacity-70 group-hover:opacity-100 transition-opacity">
                     {template.stats}
                   </p>
                 </div>
@@ -560,7 +560,7 @@ export function InsightsView() {
                 <Card className="p-3 border border-[rgba(182,182,209,0.15)] rounded-2xl bg-[#F4F4F8]">
                   <div className="flex items-center justify-between">
                     <p className="text-sm font-medium">Total Tasks</p>
-                    <Badge variant="secondary" className="bg-white text-[#4262FF]">
+                    <Badge variant="secondary" className="bg-white text-[##FF5C35F]">
                       24
                     </Badge>
                   </div>
@@ -568,7 +568,7 @@ export function InsightsView() {
                 <Card className="p-3 border border-[rgba(182,182,209,0.15)] rounded-2xl bg-[#F4F4F8]">
                   <div className="flex items-center justify-between">
                     <p className="text-sm font-medium">Completed</p>
-                    <Badge variant="secondary" className="bg-white text-[#4262FF]">
+                    <Badge variant="secondary" className="bg-white text-[##FF5C35F]">
                       18
                     </Badge>
                   </div>
